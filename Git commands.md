@@ -16,10 +16,6 @@ git push -u origin main
 * Create a personal access token in github account to enable push (if link is https, SSH link needs SSH keys added to the account)
 settings ->developer settings->Generate new token
 
-* My xprtize github token
-```
-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
-```
 Push asks for password and give the access token in place of password
 
 * Forking
