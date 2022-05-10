@@ -16,6 +16,10 @@ git push -u origin main
 * Create a personal access token in github account to enable push (if link is https, SSH link needs SSH keys added to the account)
 settings ->developer settings->Generate new token
 
+* My xprtize github token
+```
+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
+```
 Push asks for password and give the access token in place of password
 
 * Forking
@@ -34,13 +38,30 @@ git branch mybranch
 Change to branch
 ```
 git checkout mybranch
+git add .
+git commit -m "change"
 ```
 Merge when work is finished (merge from main branch)
 ```
 git checkout main
 git merge mybranch -m ""
 ```
-
+* To see existing local branches
+```
+git branch
+```
+* To see remote branches
+```
+git branch -r
+```
+* To delete a local branch
+```
+git branch -d mybranch
+```
+* To delete a remote branch
+```
+git push origin --delete mybranch
+```
 * Pulling to update local repository with changes in the remote (important when another contributor made a relevant change that gets merged)
 ```
 git pull
